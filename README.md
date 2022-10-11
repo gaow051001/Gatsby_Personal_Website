@@ -1,8 +1,8 @@
 # Gatsby_Personal_Website
  
  Gatsby Project 
- Focus on Design and Implementation of JS in GatsbyJS
- Look into GraphQL, given the time and item that need it
+ Focus on Design and Implementation of JS in GatsbyJS.
+ Look into GraphQL, given the time and item that need it.
  
  
  Task to Complete:
