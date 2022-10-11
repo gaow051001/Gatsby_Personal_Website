@@ -17,6 +17,7 @@ import {
   socialList,
   socialListItem,
 } from '../components/index.module.css'
+import { Fade } from "react-awesome-reveal";
 
 const IconStyles = {
   height: "50px",
@@ -31,18 +32,20 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className={main}>
+      <Fade direction='left' delay='20' triggerOnce>
         <div className={titleCard}>
-          <h1 className={head}>Hello!</h1>
-          <div></div>
+            <h1 className={head}>Hello!</h1>
         </div>
-        <div className={titleCardBox}>
-          <p className={paragraph}>I'm Wei-Jie Gao,
-            <br></br> 
-            Software Developer & Designer.
-            <br></br>
-            Also a Traveler, Critical-Thinker, and Learner.
-          </p>
+        <div className={titleCardBox} >
+          
+            <p className={paragraph}>I'm Wei-Jie Gao,
+              <br></br> 
+              Software Developer & Designer.
+              <br></br>
+              Also a Traveler, Critical-Thinker, and Learner.
+            </p>
         </div>
+      </Fade>
         <div className={titleCardBox}>
           <ul className={socialList}>
             <li className={socialListItem}>
