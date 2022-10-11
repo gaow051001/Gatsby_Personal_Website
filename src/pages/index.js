@@ -33,6 +33,7 @@ const IndexPage = () => {
       <div className={main}>
         <div className={titleCard}>
           <h1 className={head}>Hello!</h1>
+          <div></div>
         </div>
         <div className={titleCardBox}>
           <p className={paragraph}>I'm Wei-Jie Gao,
@@ -41,7 +42,6 @@ const IndexPage = () => {
             <br></br>
             Also a Traveler, Critical-Thinker, and Learner.
           </p>
-          {/* <p className={paragraph}>...</p> */}
         </div>
         <div className={titleCardBox}>
           <ul className={socialList}>
