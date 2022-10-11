@@ -1,0 +1,72 @@
+.main {
+    margin: auto;
+    /* max-width: 500px; */
+    font-family: sans-serif;
+    /* background-image: url("../images/greecebg2.jpg"); */
+    width: 100%;
+    height: 150rem;
+    border: 5px solid black;
+}
+
+.title-card {
+    /* padding-top: 5rem; */
+    margin: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 15rem;
+
+    display: flex;
+    width: auto;
+    height: fit-content;
+
+    /* border: 5px solid black; */
+    /* vertical-align: middle; */
+    /* align-items:flex-start; */
+    /* text-align: left; */
+    
+}
+
+.title-card-box {
+    margin: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    /* margin-top: 5rem; */
+
+    display: flex;
+    width: auto;
+    height: fit-content;
+
+    /* border: 5px solid black; */
+}
+
+.head {
+    /* margin:auto; */
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif ;
+    /* remove bottom margin */
+    margin-block-end: 0;
+}
+
+.paragraph {
+    /* margin: auto; */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif ;
+    
+    /* remove top margin */
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.socialList {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.socialList-item {
+    margin-right: 3rem;
+} 
