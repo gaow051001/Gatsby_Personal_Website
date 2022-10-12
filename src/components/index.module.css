@@ -2,19 +2,103 @@
     margin: auto;
     /* max-width: 500px; */
     font-family: sans-serif;
-    /* background-image: url("../images/greecebg2.jpg"); */
-    /* width: 100%; */
     height: 150rem;
 
-    margin-top: 20rem;
+    /* margin-top: 20rem; */
     /* border: 5px solid black; */
+}
+
+.title-bg-box {
+  width: auto;
+  height: 80vh;
+  padding: 2%;
+  margin: 5rem;
+  
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 20px black;
+
+  display: flex;
+  align-items: center;
+
+  /* animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; */
+
+  /* background-color: #D9AFD9; */
+  /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+  /* border: 5px solid black; */
+}
+
+/* @keyframes example{
+  0%{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+    background-size: cover;
+    opacity: 0.5;
+  }
+  25%{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+    background-size: cover;
+    opacity: 1;
+  }
+  50%{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+    background-size: cover;
+    opacity: 1;
+  }
+  75%{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+    background-size: cover;
+    opacity: 1;
+  }
+  100%{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+    background-size: cover;
+    opacity: 0.5;
+  }
+} */
+
+
+.title-box {
+  margin: auto;
+  width: auto;
+  height: auto;
+      
+  background-color:azure;
+  opacity: 0.9;
+  border-radius:10px;
+  box-shadow: 1px 1px 5px black;
+  /* border: 5px solid black; */
+}
+
+.title-contain {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.title-head {
+  margin: 2rem;
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  background-image: url(../images/headPic.jpg);
+  background-size: cover;
+}
+
+.title-info {
+  margin: auto;
+  /* display: flex;
+  align-items: flex-end; */
 }
 
 .title-card {
     /* padding-top: 5rem; */
     margin: auto;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    /* padding-top: 20rem; */
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
     
 
     display: flex;
@@ -25,13 +109,12 @@
     /* vertical-align: middle; */
     /* align-items:flex-start; */
     /* text-align: left; */
-    
 }
 
 .title-card-box {
     margin: auto;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    /* margin-left: 10rem; */
+    margin-right: 2rem;
     /* margin-top: 5rem; */
 
     display: flex;
@@ -41,22 +124,52 @@
     /* border: 5px solid black; */
 }
 
+.info-card {
+  margin: auto;
+  margin-top: 25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  
+  display: flex;
+  width: auto;
+  height: fit-content;
+  border: 5px solid black;
+}
+
+.info-card-box {
+
+  margin:auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  display: flex;
+  width: auto;
+  height: fit-content;
+
+  border: 5px solid black;
+}
+
 .head {
     /* margin:auto; */
     font-style: italic;
-    font-size: 3rem;
+    font-size: 3.0em;
     font-weight: bold;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif ;
+    /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
+    font-family: Georgia;
+    /* text-shadow: 5px 5px 15px rgba(0,0,0,0.5); */
+
     /* remove bottom margin */
     margin-block-end: 0;
 }
 
 .paragraph {
     /* margin: auto; */
-    font-size: 2rem;
+    font-size: 2.0em;
     font-weight: bold;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif ;
-    
+    /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
+    font-family: Georgia;
+    /* text-shadow: 1px 1px 15px rgba(0,0,0,0.5); */
+
     /* remove top margin */
     margin-block-start: 0;
     margin-block-end: 0;
@@ -72,6 +185,55 @@
 .socialList-item {
     margin-right: 3rem;
 } 
+
+.gradient-border {
+  --border-width: 3px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #5899E2;
+  background: white;
+  border-radius: var(--border-width);
+}
+
+.gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 
 /* .fade-in {
     animation: fadeIn ease 2s;

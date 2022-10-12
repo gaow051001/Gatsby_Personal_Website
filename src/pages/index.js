@@ -10,20 +10,43 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { 
   main,
+  titleBgBox,
+  titleBox,
   titleCard,
+  titleContain,
+  titleHead,
+  titleInfo,
   titleCardBox,
+  infoCard,
+  infoCardBox,
   head,
   paragraph,
   socialList,
   socialListItem,
+  // gradientBorder,
 } from '../components/index.module.css'
+import {
+  card,
+  title,
+  bar,
+  emptybar,
+  filledbar,
+  circle,
+  stroke,
+  svgColor,
+} from '../components/card.module.css'
+// import {
+//   separatorLine,
+// } from '../components/layout.module.css'
+
 import { Fade } from "react-awesome-reveal";
 
 const IconStyles = {
-  height: "50px",
-  width: "50px",
-  color: "#65AFFF"
+  height: "4.0em",
+  width: "4.0em",
+  color: "#274060", 
 }
+
 //import { StaticImage } from 'gatsby-plugin-image'
 //import background from '../images/greecebg2.jpg' 
 
@@ -32,36 +55,97 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className={main}>
-      <Fade direction='left' delay='20' triggerOnce>
-        <div className={titleCard}>
-            <h1 className={head}>Hello!</h1>
-        </div>
-        <div className={titleCardBox} >
+        <div className={titleBgBox}>
+          <div className={titleBox}>
+              <div className={titleContain}>
+                <div className={titleHead}></div>
+                <div className={titleInfo}>
+                  <Fade direction="down" delay="20" triggerOnce>
+                    <div className={titleCard}>
+                        <h1 className={head}>Welcome</h1>
+                    </div>
+                    <div className={titleCardBox} >
+                        <p className={paragraph}>I'm Wei-Jie Gao,
+                          <br></br> 
+                          Software Developer & Designer.
+                          <br></br>
+                          Also a Traveler, Critical-Thinker, and Learner.
+                        </p>
+                    </div>
+                  </Fade>
+                  <div className={titleCardBox}>
+                    <ul className={socialList}>
+                      <Fade direction="left" cascade damping={0.3} triggerOnce>
+                        <li className={socialListItem}>
+                          <Link to={"https://www.linkedin.com/in/wei-jie-gao-01aa29187/"}><FaLinkedin style={IconStyles}/></Link>
+                        </li>
+                        <li className={socialListItem}>
+                          <Link to={"https://github.com/gaow051001"}><FaGithub style={IconStyles}/></Link>
+                        </li>
+                        <li className={socialListItem}>
+                          <Link to={"https://www.facebook.com/weijie.gao.58"}><FaFacebook style={IconStyles}/></Link>
+                        </li>
+                        <li className={socialListItem}>
+                          <Link to={""}><FaEnvelope style={IconStyles}/></Link>
+                        </li>
+                      </Fade>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>  
+        {/* <hr className={separatorLine}/>  */}
+        <div className={infoCard}>
           
-            <p className={paragraph}>I'm Wei-Jie Gao,
-              <br></br> 
-              Software Developer & Designer.
-              <br></br>
-              Also a Traveler, Critical-Thinker, and Learner.
-            </p>
+          <div className={infoCardBox}> 
+            Something
+          </div>
+          <div className={infoCardBox}> 
+            Something
+          </div>
+          <div className={infoCardBox}> 
+            Something
+          </div>
         </div>
-      </Fade>
-        <div className={titleCardBox}>
-          <ul className={socialList}>
-            <li className={socialListItem}>
-              <Link to={"https://www.linkedin.com/in/wei-jie-gao-01aa29187/"}><FaLinkedin style={IconStyles}/></Link>
-            </li>
-            <li className={socialListItem}>
-              <Link to={"https://github.com/gaow051001"}><FaGithub style={IconStyles}/></Link>
-            </li>
-            <li className={socialListItem}>
-              <Link to={"https://www.facebook.com/weijie.gao.58"}><FaFacebook style={IconStyles}/></Link>
-            </li>
-            <li className={socialListItem}>
-              <Link to={""}><FaEnvelope style={IconStyles}/></Link>
-            </li>
-          </ul>
-        </div>   
+        <div className={infoCard}>
+            <div class={card}>
+              <h3 class={title}>Card 1</h3>
+              <div class={bar}>
+                <div class={emptybar}></div>
+                <div class={filledbar}></div>
+              </div>
+              <div class={circle}>
+                <svg className={svgColor} version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class={stroke} cx="60" cy="60" r="50"/>
+              </svg>
+              </div>
+            </div>
+            <div class={card}>
+              <h3 class={title}>Card 2</h3>
+              <div class={bar}>
+                <div class={emptybar}></div>
+                <div class={filledbar}></div>
+              </div>
+              <div class={circle}>
+                <svg className={svgColor} version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class={stroke} cx="60" cy="60" r="50"/>
+              </svg>
+              </div>
+            </div>
+            <div class={card}>
+              <h3 class={title}>Card 3</h3>
+              <div class={bar}>
+                <div class={emptybar}></div>
+                <div class={filledbar}></div>
+              </div>
+              <div class={circle}>
+                <svg className={svgColor} version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class={stroke} cx="60" cy="60" r="50"/>
+              </svg>
+              </div>
+            </div>
+        </div>
       </div>
     </Layout>
   )

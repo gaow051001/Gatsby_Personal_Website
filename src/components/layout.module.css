@@ -67,3 +67,25 @@
     /* remove underline */
     text-decoration: none !important;
 }
+
+.separator-line {
+
+    border: 0;
+    /* border-top: medium double #333; */
+    height: 2px;
+    background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+    /* border-bottom: 2px solid black; */
+    width: 0;
+    animation: separator-width 3s ease-out forwards;
+}
+@keyframes separator-width {
+    0% {
+        width: 0;
+   }
+    100% {
+        width: 85%;
+        display: inline-block;
+        background-color: white;
+
+   }
+}
