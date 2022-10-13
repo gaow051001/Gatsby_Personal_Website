@@ -11,13 +11,17 @@
 .title-bg-box {
   width: auto;
   height: 80vh;
-  padding: 2%;
-  margin: 5rem;
+  margin: 2rem;
   
-  border-radius: 10px;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg);
+  /* border-radius: 10px; */
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgb(255, 255, 255) 100%), url(../images/landscape.jpg);
+  opacity: 100%;
+  /* backdrop-filter: blur(8px); */
+  
+  /* background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(117, 19, 93, 0.32)), url(../images/greecebg2.jpg); */
+  background-position: center;
   background-size: cover;
-  box-shadow: 1px 1px 20px black;
+  box-shadow: 1px 1px 5px black;
 
   display: flex;
   align-items: center;
@@ -65,10 +69,10 @@
   width: auto;
   height: auto;
       
-  background-color:azure;
-  opacity: 0.9;
-  border-radius:10px;
-  box-shadow: 1px 1px 5px black;
+  background-color:#FFFAFA;
+  opacity: 0.99;
+  /* border-radius:10px; */
+  box-shadow: 0px 0px 5px black;
   /* border: 5px solid black; */
 }
 

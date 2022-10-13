@@ -41,10 +41,13 @@ import {
 
 import { Fade } from "react-awesome-reveal";
 
+import '../components/global.css';
+
 const IconStyles = {
   height: "4.0em",
   width: "4.0em",
-  color: "#274060", 
+  //backgroundImage: "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)",
+  color: "#65AFFF", 
 }
 
 //import { StaticImage } from 'gatsby-plugin-image'
