@@ -80,11 +80,12 @@
 
 .title-head {
   margin: 2rem;
-  width: 25em;
-  height: 25em;
+  width: 15em;
+  height: 15em;
   border-radius: 50%;
   background-image: url(../images/headPic.jpg);
   background-size: cover;
+  box-shadow: 2px 2px 5px black;
 }
 
 .title-info {
@@ -164,7 +165,7 @@
 
 .paragraph {
     /* margin: auto; */
-    font-size: 2.0em;
+    font-size: 1.5em;
     font-weight: bold;
     /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
     font-family: Georgia;

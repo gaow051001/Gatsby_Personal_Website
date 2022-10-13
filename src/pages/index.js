@@ -58,7 +58,9 @@ const IndexPage = () => {
         <div className={titleBgBox}>
           <div className={titleBox}>
               <div className={titleContain}>
-                <div className={titleHead}></div>
+                <Fade direction="down" delay="20" triggerOnce>
+                  <div className={titleHead}></div>
+                </Fade>
                 <div className={titleInfo}>
                   <Fade direction="down" delay="20" triggerOnce>
                     <div className={titleCard}>
@@ -96,6 +98,7 @@ const IndexPage = () => {
           </div>
         </div>  
         {/* <hr className={separatorLine}/>  */}
+        <hr/>
         <div className={infoCard}>
           
           <div className={infoCardBox}> 
