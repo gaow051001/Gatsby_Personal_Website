@@ -5,7 +5,12 @@ import {
   FaFacebook,
   FaLinkedin,
   FaEnvelope,
+  FaPython,
+  FaJava,
 } from 'react-icons/fa'
+import {
+  SiCplusplus,
+} from 'react-icons/si'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { 
@@ -18,26 +23,57 @@ import {
   titleInfo,
   titleCardBox,
   infoCard,
+  infoCard2,
   infoCardBox,
+  infoCardBox2,
+  infoCardBoxHead,
+  infoCardBoxText,
   head,
+  headSkill,
   paragraph,
   socialList,
   socialListItem,
   // gradientBorder,
 } from '../components/index.module.css'
+// import {
+//   card,
+//   title,
+//   bar,
+//   emptybar,
+//   filledbar,
+//   circle,
+//   stroke,
+//   svgColor,
+// } from '../components/card.module.css'
+import {
+  sectionHead,
+  sectionParagraph,
+} from '../components/section.module.css'
+import {
+  separatorLine,
+} from '../components/layout.module.css'
 import {
   card,
-  title,
+  cards,
+  card__apply,
+  card__icon,
+  card__link,
+  card__exit,
+  card__title,
+  card1,
+  card2,
+  card3,
+  card4,
+  card5,
+  card6,
   bar,
   emptybar,
   filledbar,
-  circle,
-  stroke,
-  svgColor,
-} from '../components/card.module.css'
-// import {
-//   separatorLine,
-// } from '../components/layout.module.css'
+} from '../components/card2.module.css'
+import {
+  timeline,
+  content,
+} from '../components/timeline.module.css'
 
 import { Fade } from "react-awesome-reveal";
 
@@ -91,7 +127,7 @@ const IndexPage = () => {
                           <Link to={"https://www.facebook.com/weijie.gao.58"}><FaFacebook style={IconStyles}/></Link>
                         </li>
                         <li className={socialListItem}>
-                          <Link to={""}><FaEnvelope style={IconStyles}/></Link>
+                          <Link to={"mailto:gaow051001@gmail.com"}><FaEnvelope style={IconStyles}/></Link>
                         </li>
                       </Fade>
                     </ul>
@@ -100,22 +136,67 @@ const IndexPage = () => {
               </div>
           </div>
         </div>  
-        {/* <hr className={separatorLine}/>  */}
-        <hr/>
+        <hr className={separatorLine}/> 
+        {/* <hr/> */}
         <div className={infoCard}>
-          
           <div className={infoCardBox}> 
-            Something
-          </div>
-          <div className={infoCardBox}> 
-            Something
-          </div>
-          <div className={infoCardBox}> 
-            Something
+            <h2 className={sectionHead}>
+              About Me
+            </h2>
+            <p className={sectionParagraph}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
         </div>
-        <div className={infoCard}>
-            <div class={card}>
+        <hr className={separatorLine}/>
+        <div className={infoCard2}>
+          <div className={infoCardBox2}>
+            <h1 className={headSkill}>
+              Programming Language
+            </h1>
+          </div>
+          <div className={cards}>
+            <div class={card + " " +card3}>
+              <div class={card__icon}><SiCplusplus/>
+                <div class={bar}>
+                  <div class={emptybar}></div>
+                  <div class={filledbar}></div>
+                </div>
+              </div>
+              
+              {/* <p class={card__exit}><i class="fas fa-times"></i></p> */}
+              <h2 class={card__title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <p class={card__apply}>
+                <a class={card__link} href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+              </p>
+            </div>
+            <div class={card + " " +card4}>
+              <div class={card__icon}><FaJava/>
+                <div class={bar}>
+                  <div class={emptybar}></div>
+                  <div class={filledbar}></div>
+                </div>
+              </div>
+              {/* <p class={card__exit}><i class="fas fa-times"></i></p> */}
+              <h2 class={card__title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <p class={card__apply}>
+                <a class={card__link} href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+              </p>
+            </div>
+            <div class={card + " " +card2}>
+              <div class={card__icon}><FaPython/>
+                <div class={bar}>
+                  <div class={emptybar}></div>
+                  <div class={filledbar}></div>
+                </div>  
+              </div>
+              {/* <p class={card__exit}><i class="fas fa-times"></i></p> */}
+              <h2 class={card__title}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <p class={card__apply}>
+                <a class={card__link} href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+              </p>
+            </div>
+            {/* <div class={card}>
               <h3 class={title}>Card 1</h3>
               <div class={bar}>
                 <div class={emptybar}></div>
@@ -150,8 +231,44 @@ const IndexPage = () => {
                 <circle class={stroke} cx="60" cy="60" r="50"/>
               </svg>
               </div>
-            </div>
+            </div> */}
+          </div>
         </div>
+        {/* <hr className={separatorLine}/>  */}
+        <div className={infoCardBox2}>
+          <div className={infoCardBox2}>
+            <h1 className={headSkill}>
+              Experience
+            </h1>
+          </div>
+          <div className={timeline}>
+            <ul>
+              <li>
+                <span>3rd January 2020</span>
+                <div class={content}>
+                  <div class={infoCardBoxHead}>
+                  </div>
+                  <div class={infoCardBoxText}>
+                    <h3>What Is Lorem Ipsum?</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>3rd January 2020</span>
+                <div class={content}>
+                  <h3>What Is Lorem Ipsum?</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* <hr className={separatorLine}/>  */}
       </div>
     </Layout>
   )

@@ -1,0 +1,30 @@
+.section-head {
+    /* margin:auto; */
+    font-style: italic;
+    font-size: 4.0em;
+    font-weight: bold;
+    /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
+    /* font-family: Georgia; */
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    text-align: center;
+    /* text-shadow: 5px 5px 15px rgba(0,0,0,0.5); */
+
+    padding-right: 2rem;
+
+    /* remove bottom margin */
+    /* margin-block-end: 0; */
+}
+
+.section-paragraph {
+    /* margin: auto; */
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
+    /* font-family: Georgia; */
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    /* text-shadow: 1px 1px 15px rgba(0,0,0,0.5); */
+
+    /* remove top margin */
+    /* margin-block-start: 0;
+    margin-block-end: 0; */
+}

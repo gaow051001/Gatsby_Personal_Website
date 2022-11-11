@@ -92,6 +92,11 @@
   box-shadow: 2px 2px 5px black;
 }
 
+.title-head:hover {
+  /* box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); */
+  transform: scale(1.00);
+}
+
 .title-info {
   margin: auto;
   /* display: flex;
@@ -131,48 +136,135 @@
 
 .info-card {
   margin: auto;
-  margin-top: 25rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  /* margin-top: 25rem; */
+  /* margin-left: 5rem; */
+  /* margin-right: 5rem; */
   
-  display: flex;
+  background-color: #FFFAFA;
+  /* display: flex; */
   width: auto;
   height: fit-content;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+}
+
+.info-card-2 {
+  margin: auto;
+  /* margin-top: 25rem; */
+  /* margin-left: 5rem; */
+  /* margin-right: 5rem; */
+  
+  /* background-color: #FFFAFA; */
+  /* display: flex; */
+  width: auto;
+  height: fit-content;
+  /* border: 5px solid black; */
 }
 
 .info-card-box {
 
   margin:auto;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: auto;
+
 
   display: flex;
   width: auto;
   height: fit-content;
 
-  border: 5px solid black;
+  align-items: center;
+
+  /* border: 5px solid black; */
 }
 
-.head {
+.info-card-box-2 {
+
+  margin:auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: auto;
+
+
+  /* display: flex; */
+  width: auto;
+  height: fit-content;
+
+  text-align: center;
+
+  /* border: 5px solid black; */
+}
+
+.info-card-box-head {
+
+  margin: 1rem;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  /* padding: auto; */
+
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../images/headPic.jpg);
+  background-size: cover;
+
+  /* display: flex; */
+  /* width: auto;
+  height: fit-content;
+
+  text-align: center; */
+
+  /* border: 5px solid black; */
+}
+
+.info-card-box-text {
+
+  margin:auto;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  /* padding: auto; */
+
+
+  /* display: flex; */
+  width: auto;
+  height: fit-content;
+
+  text-align: left;
+
+  /* border: 5px solid black; */
+}
+
+.head-skill {
     /* margin:auto; */
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 3.0em;
     font-weight: bold;
     /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
-    font-family: Georgia;
+    /* font-family: Georgia; */
+    /* font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /* text-shadow: 5px 5px 15px rgba(0,0,0,0.5); */
-
-    /* remove bottom margin */
-    margin-block-end: 0;
 }
+
+.head {
+  /* margin:auto; */
+  /* font-style: italic; */
+  font-size: 3.0em;
+  font-weight: bold;
+  /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
+  /* font-family: Georgia; */
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  /* text-shadow: 5px 5px 15px rgba(0,0,0,0.5); */
+  /* remove bottom margin */
+  margin-block-end: 0;
+}
+
 
 .paragraph {
     /* margin: auto; */
     font-size: 1.5em;
     font-weight: bold;
     /* font-family: New Century Schoolbook, TeX Gyre Schola, serif ; */
-    font-family: Georgia;
+    /* font-family: Georgia; */
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     /* text-shadow: 1px 1px 15px rgba(0,0,0,0.5); */
 
     /* remove top margin */
